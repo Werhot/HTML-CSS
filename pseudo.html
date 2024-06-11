@@ -5,11 +5,14 @@
     </head>
     <body>
         <style>
+            juy p:last-child {
+                color: green;
+            }
             juy p:nth-child(2n):hover {
                 font-size: 20px;
             }
-            jux p:first-child::before {
-                background-color: green;
+            jux p:only-child {
+                color: blueviolet;
             }
         </style>
         <juy>
@@ -44,7 +47,7 @@
                 mytjut54y54y
             </p>
         </juy>
-        <jux>
+        <jux class = "A1">
             <p>
                 mytjut54y54y
             </p>
