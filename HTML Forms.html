@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <link rel = "stylesheet" href = "StyleCss.css">
+</head>
+<body>
+    <form action = "/search?username=tom&password=1234" method = "post">
+        <ul style = "list-style: none;"> 
+            <li>
+                <label for = "name">Введите имя:</label>
+                <input type = "text" id = "username" name = "username" class = "frames"/>
+                <label for = "name">Введите пороль:</label>
+                <input type = "text" id = "password" name = "password" class = "frames"/>
+                <input type = "submit" value = "Сохранить"/>
+            </li>  
+
+            <li> 
+                <p>Пол:</p>
+                <input type ="radio" id = "male" value = "male" name = "sex"/>
+                <label for = "male">Мужской</label>
+                <input type ="radio" id = "female" value = "female" name = "sex"/>
+                <label for = "female">Женщина</label>
+            </li>
+
+            <li>
+                <input type = "checkbox" id = "my-checkbox" name = ""/>
+                <label for = "my-checkbox">запомнить</label>
+            </li>
+
+            <li>
+                <input type = "reset" id = "reset"/>
+            </li>
+
+        </ul>
+    </form>
+
+</body>
+</html>

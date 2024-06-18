@@ -1,0 +1,17 @@
+form {
+    border: 1px black solid;
+}
+
+input[type = "submit"] {
+    background-color: brown;
+}
+
+#reset {
+    background-color: blueviolet;
+}
+
+.frames {
+    background-color: lawngreen;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
