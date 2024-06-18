@@ -15,3 +15,6 @@ input[type = "submit"] {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+ul {
+    list-style-type: none;
+}

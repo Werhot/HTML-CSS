@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>HTML Forms</title>
-    <link rel = "stylesheet" href = "StyleCss.css">
-</head>
-<body>
-    <form action = "/search?username=tom&password=1234" method = "post">
-        <ul style = "list-style: none;"> 
-            <li>
-                <label for = "name">Введите имя:</label>
-                <input type = "text" id = "username" name = "username" class = "frames"/>
-                <label for = "name">Введите пороль:</label>
-                <input type = "text" id = "password" name = "password" class = "frames"/>
-                <input type = "submit" value = "Сохранить"/>
-            </li>  
+    <head>
+        <title>HTML Forms</title>
+        <link rel = "stylesheet" href = "StyleCss.css">
+    </head>
+    <body>
+        <form action = "/search?username=tom&password=1234" method = "post">
+            <ul> 
+                <li>
+                    <label for = "name">Введите имя:</label>
+                    <input type = "text" id = "username" name = "username" class = "frames"/>
+                    <label for = "name">Введите пороль:</label>
+                    <input type = "text" id = "password" name = "password" class = "frames"/>
+                    <input type = "submit" value = "Сохранить"/>
+                </li>  
 
-            <li> 
-                <p>Пол:</p>
-                <input type ="radio" id = "male" value = "male" name = "sex"/>
-                <label for = "male">Мужской</label>
-                <input type ="radio" id = "female" value = "female" name = "sex"/>
-                <label for = "female">Женщина</label>
-            </li>
+                <li> 
+                    <p>Пол:</p>
+                    <input type ="radio" id = "male" value = "male" name = "sex"/>
+                    <label for = "male">Мужской</label>
+                    <input type ="radio" id = "female" value = "female" name = "sex"/>
+                    <label for = "female">Женщина</label>
+                </li>
 
-            <li>
+                <li>
                 <input type = "checkbox" id = "my-checkbox" name = ""/>
-                <label for = "my-checkbox">запомнить</label>
-            </li>
+                    <label for = "my-checkbox">запомнить</label>
+                </li>
 
-            <li>
-                <input type = "reset" id = "reset"/>
-            </li>
+                <li>
+                    <input type = "reset" id = "reset"/>
+                </li>
 
-        </ul>
-    </form>
+            </ul>
+        </form>
+        <form action = "" method = "get">
+            <ul>
+                <li>
+                    <p>Form2</p>
+                    <select name="my-select" id=" my-select" multiple>
+                        <option value="option1">option1</option>
+                        <option value="option2" selected>option2</option>
+                        <option value="option3">option3</option>
+                    </select>
+                </li>
 
-</body>
+                <li>
+                    <label for = "comments">Enter your comments</label>
+                    <textarea name = "comments" id = "comments"></textarea>
+                </li>
+            </ul>
+        </form>
+
+        <form action = ""> 
+            <p>Form3</p>
+             <fieldset>
+                <legend>Legend of my fieldset:</legend>
+                <input list = "">
+                <datalist id = "languages">
+                    <option value="English"></option>
+                    <option value="German"></option>
+                    <option value="Russian"></option>
+                </datalist>
+            </fieldset>
+        </form>
+
+
+    </body>
 </html>
