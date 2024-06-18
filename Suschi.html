@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Suschi</title>
+        <style>
+            header {
+                text-align: center;
+            }
+            header h1 {
+                border: 5px groove green;
+                background-color: green;
+            }
+            #main_section {
+                background-color: salmon;
+                border: 5px groove salmon;
+            }
+            #section1 {
+                display: block;
+                padding-top: 60px;
+                margin-left: 60px;
+                width: 55%;
+            }
+            #section2 {
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+            #section3 {
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+            #section3 select {
+                padding: 10px;
+                padding-right: 100px;
+            }
+            #section4 {
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+            #section5 {
+                margin-top: 60px;
+                margin-left: 60px;
+                padding-bottom: 60px;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <header>
+        <div>    
+            <section>
+                <h1>Suschi order site</h1>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div>    
+            <section id = "main_section">
+                <form>
+                    <section id = "section1">                    
+                        <label for = "name">Имя:</label>
+                        <input type = "text" id = "name" name = "name"/>
+                        <label for = "adress">Адрес:</label>
+                        <input type = "text" id = "adress" name = "adress"/>
+                        <label for = "phone">Телефон:</label>
+                        <input type = "tel" id = "phone" name = "phone"/>
+                        <label for = "email">Электронная почта:</label>
+                        <input type = "email" id = "email" name = "email"/>
+                        <label for = "number">Кол-во палочек:</label>
+                        <input type = "number" id = "number" name = "number"/>
+                        <input type = "reset" id = "reset"/>
+                    </section>
+
+                    <section id = "section2">
+                        <p>Вид палочек:</p>
+                        <input type ="radio" id = "default" value = "default" name = "sticks"/>
+                        <label for = "default">Обычные</label>
+                        <input type ="radio" id = "training" value = "training" name = "sticks"/>
+                        <label for = "training">Учебные</label>
+                    </section>
+
+                    <section id = "section3">
+                        <p>Ассортимент</p>
+                        <select name="suschi-select" id = "suschi-select" multiple>
+                            <option value="option1">Суши1</option>
+                            <option value="option2">Суши2</option>
+                            <option value="option3">Суши3</option>
+                            <option value="option4">Сущи4</option>
+                            <option value="option5">Суши5</option>
+                            <option value="option6">Суши6</option>
+                        </select>
+                        <input type = "reset" id = "reset"/>
+                    </section>
+                    
+                    <section id = "section4">
+                        <input type = "checkbox" id = "suschi-checkbox1" name = "suschi-checkbox1"/>
+                        <label for = "suschi-checkbox1">Салфетки</label>
+                        <input type = "checkbox" id = "suschi-checkbox2" name = "suschi-checkbox2"/>
+                        <label for = "suschi-checkbox2">Влажные салфетки</label>
+                    </section>
+                    
+                    <section id = "section5">
+                        <label for = "comments">Дополнительные комментарии к заказу:</label><br/>
+                        <textarea name = "comments" id = "comments" rows="10" cols="60"></textarea>
+                        <input type = "reset" id = "reset"/>
+                        <input type = "submit" value = "Подтвердить"/>
+                    </section>
+
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>    
+            <section>
+                
+            </section>
+        </div>
+    </footer>
+    </body>
+</html>
